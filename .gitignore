@@ -1,0 +1,13 @@
+# Compiled / .class files
+*.py[cod]
+__pycache__/
+*.swp
+*.log
+*.class
+*$py.class
+*.pytest_cache
+\.idea
+
+# Environments
+v_env/
+setup.sh
