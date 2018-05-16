@@ -1,8 +1,6 @@
------------------------------ SAMPLE TESTS ------------------------------------------
+### -------     SAMPLE TESTS     ------
 
-
-
-$ pytest -s -v test_class.py
+```$ pytest -s -v test_class.py
 ============================= test session starts ==============================
 platform linux2 -- Python 2.7.12, pytest-3.5.1, py-1.5.3, pluggy-0.6.0 -- /usr/bin/python
 cachedir: .pytest_cache
@@ -69,3 +67,4 @@ PASSED
 
 
 =========================== 8 passed in 0.02 seconds ===========================
+```
