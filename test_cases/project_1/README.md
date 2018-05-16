@@ -1,7 +1,5 @@
-SAMPLE TESTS
-
-
-
+> SAMPLE TESTS
+```
 $ pytest -v -s test_class.py
 ============================= test session starts ==============================
 platform linux2 -- Python 2.7.12, pytest-3.5.1, py-1.5.3, pluggy-0.6.0 -- /usr/bin/python
@@ -67,4 +65,4 @@ PASSED
 ------- Teardown method..............
 ========== Teardown Class..................
 
-=========================== 8 passed in 0.02 seconds ===========================
+=========================== 8 passed in 0.02 seconds ===========================```
