@@ -10,10 +10,10 @@ class TestClass(object):
   def teardown_class(cls):
     print "========== Teardown Class.................."
 
-  def setup(self):
+  def setup_method(self):
     print "\n------- Setup method done............"
 
-  def teardown(self):
+  def teardown_method(self):
     print "\n------- Teardown method.............."
 
   def hi(self):

@@ -19,6 +19,8 @@ def test_config(request):
 def config_data(request, test_config):
   testdata = test_config
   test = request.function.__name__
+  print "Class Name : %s" % request.cls.__name__
+  print "Testcase Name : %s" % test
   if test in testdata:
     test_args = testdata[test]
     yield test_args

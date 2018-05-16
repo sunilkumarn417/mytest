@@ -1,13 +1,14 @@
 import pytest
 
+
 class TestClass(object):
 
-  # @staticmethod
-  # @pytest.fixture(scope="function", autouse=True)
-  # def db_connect(request):
-  #   print "[TEST MODULE] DB connected......."
-  #   yield True
-  #   print "[TEST MODULE] DB Disconnected......."
+  @staticmethod
+  @pytest.fixture(scope="function")
+  def db_connect(request):
+    print "[TEST MODULE] DB connected......."
+    yield True
+    print "\n[TEST MODULE] DB Disconnected......."
 
   def setup_class(cls):
     print "\n=========== Setup Class.................."
@@ -15,19 +16,21 @@ class TestClass(object):
   def teardown_class(cls):
     print "========== Teardown Class.................."
 
-  def setup(self):
-    print "\n------- Setup method done............"
 
-  def teardown(self):
-    print "\n------- Teardown method.............."
+  def setup_method(self):
+    print "\n------- Setup method Completed............"
+
+  def teardown_method(self):
+    print "\n------- Teardown method Completed.............."
 
   def hi(self):
     print "HI......................."
 
   @pytest.mark.parametrize("t", ["t", "h", "s"])
-  def test_parametrize(self, t):
+  def test_parametrize(self, t, db_connect):
     x = "this"
     assert t in x
+    print db_connect
 
   def test_one(self, config_data):
     x = "1234567890"
