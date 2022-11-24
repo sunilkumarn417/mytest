@@ -6,7 +6,7 @@ __pycache__/
 *.class
 *$py.class
 *.pytest_cache
-\.idea
+.idea
 
 # Environments
 v_env/
