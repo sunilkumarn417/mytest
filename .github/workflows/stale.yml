@@ -32,6 +32,9 @@ jobs:
 
         # stale label
         stale-pr-label: 'stale-warning-on-inactivity'
+        
+        # remove stale label when updated.
+        remove-stale-when-updated: true
 
         # CLOSE
         # Duration of inactivity before closing stale PRs
@@ -43,6 +46,9 @@ jobs:
 
         # close issue label
         close-issue-label: "closed-due-to-inactivity"      
+
+        # close issue label
+        close-pr-label: "closed-due-to-inactivity"   
 
         # Change the order used to fetch the issues and pull requests
         # So we now start with the oldest PRs and work our way backwards
